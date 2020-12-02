@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>To-Do List</title>
-	<link rel="icon" href="icon.png" type="image/icon">
+	<link rel="icon" href="icon.webp" type="image/icon">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
       <a href="#todo" class="mdl-tabs__tab">To-Do Tasks</a>
       <a href="#completed" class="mdl-tabs__tab">Completed</a>
   </div>
-
+<center>
   <div class="mdl-tabs__panel is-active" id="add-item">
   	<div class="mdl-textfield mdl-js-textfield">
     <input class="mdl-textfield__input" type="text" id="new-task">
@@ -29,19 +29,22 @@
   <i class="material-icons">add</i>
 </button>
   </div>
+      </center>
   <div class="mdl-tabs__panel" id="todo">
     <ul id="incomplete-tasks">
-    
+
 	</ul>
   </div>
   <div class="mdl-tabs__panel" id="completed">
     <ul id="completed-tasks" class="mdl-list">
-    
+
     </li>
     </ul>
   </div>
 </div>
+  <center><p><span id="datetime"></span></p></center>
 	</div>
 	<script src="js/script.js"></script>
-</body>	
+  <script src="js/time.js"></script>
+</body>
 </html>
